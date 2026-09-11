@@ -21,7 +21,10 @@ def remover():
 def adicionar():
     while True:
         novo = input('Adicione um item\n>> ')
-        lista_ativos.append(novo)
+        if not lista_ativos.__contains__(novo):
+            lista_ativos.append(novo)
+        else:
+            print('Item já cadastrado!!')
         if not continuar('Deseja adicionar mais algum item?(s/n)'):
             break
 
@@ -50,19 +53,10 @@ def main():
 
             if opcao == 1:
                 listar()
-                if not continuar(mensagem_continuar):
-                    print(mensagem_despedida)
-                    break
             elif opcao == 2:
                 adicionar()
-                if not continuar(mensagem_continuar):
-                    print(mensagem_despedida)
-                    break
             elif opcao == 3:
                 remover()
-                if not continuar(mensagem_continuar):
-                    print(mensagem_despedida)
-                    break
             elif opcao == 4:
                 print(mensagem_despedida)
                 break
