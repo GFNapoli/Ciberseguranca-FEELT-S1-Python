@@ -4,10 +4,13 @@ def exercicio1():
     print(ativo.get('criticidade'))
     print(ativo.keys())
     print(ativo.items())
+    print(ativo.get('ip', 'não existe'))
     ativo.popitem()
     print(ativo)
     ativo['batata'] = 'frita'
     ativo['manga']='one piece'
+    print(ativo)
+    ativo.pop('batata')
     print(ativo)
 
 exercicio1()
