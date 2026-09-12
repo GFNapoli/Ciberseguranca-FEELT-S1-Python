@@ -7,8 +7,8 @@
   - [x] [S1_08] Estruturas de Repetição
   - [x] [S1_09] Funções
   - [x] [S1_10] Listas
-  - [ ] [S1_11] Tuplas e Sets
-  - [ ] [S1_12] Dicionários
+  - [x] [S1_11] Tuplas e Sets
+  - [x] [S1_12] Dicionários
   - [ ] [S1_13] Enumerações
   - [ ] [S1_14] Persistência em Arquivos
   - [ ] [S1_15] Tratamento de Erros
