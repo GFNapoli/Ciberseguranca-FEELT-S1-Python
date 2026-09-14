@@ -7,14 +7,9 @@ class severidade(Enum):
     critica = 4
 
     def get_by_number(numero):
-        if numero == severidade.baixa.value:
-            return severidade.baixa
-        if numero == severidade.media.value:
-            return severidade.media
-        if numero == severidade.alta.value:
-            return severidade.alta
-        if numero == severidade.critica.value:
-            return severidade.critica
+        for item in severidade:
+            if item.value == numero:
+                return item
 
 class status(Enum):
     ativo = 1
@@ -22,12 +17,9 @@ class status(Enum):
     em_manutencao = 3
 
     def get_by_number(numero):
-        if numero == status.ativo.value:
-            return status.ativo
-        if numero == status.inativo.value:
-            return status.inativo
-        if numero == status.em_manutencao.value:
-            return status.em_manutencao
+        for item in severidade:
+            if item.value == numero:
+                return item
 
 
 def adicionar():
@@ -92,7 +84,6 @@ def main():
             elif opcao == 2:
                 aux = adicionar()
                 lista_ativo.append(aux)
-                print(lista_ativo)
             elif opcao == 3:
                 nome = input('Qual nome do ativo que vc deseja mudar o status?\n>> ')
                 lista_ativo[buscar_by_name(lista_ativo, nome)]['status'] = status.get_by_number(alterar_status())
