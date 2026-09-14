@@ -9,6 +9,6 @@
   - [x] [S1_10] Listas
   - [x] [S1_11] Tuplas e Sets
   - [x] [S1_12] Dicionários
-  - [ ] [S1_13] Enumerações
+  - [x] [S1_13] Enumerações
   - [ ] [S1_14] Persistência em Arquivos
   - [ ] [S1_15] Tratamento de Erros
